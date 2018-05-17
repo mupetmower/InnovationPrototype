@@ -13,7 +13,7 @@ namespace TestApp3
 	public partial class CallType : ContentPage
 	{
         CADHttpClient cadHttp;
-
+        string locationInfo = "From First Alert";
 
 		public CallType ()
 		{          
@@ -35,35 +35,41 @@ namespace TestApp3
             var police = new Button
             {
                 Text = "Police",
-                
+                TextColor = Color.White,
                 BackgroundColor = Color.Blue,
-                FontSize = 35
+                FontSize = 35,
             };
             police.Clicked += Police_Clicked;
 
             var fire = new Button
             {
                 Text = "Fire",
+                TextColor = Color.White,
                 BackgroundColor = Color.Firebrick,
-                FontSize = 35
+                FontSize = 35,
             };
             fire.Clicked += Fire_Clicked;
 
             var ems = new Button
             {
                 Text = "EMS",
+                TextColor = Color.White,
                 BackgroundColor = Color.Gold,
-                FontSize = 35  
+                FontSize = 35,
+
             };
             ems.Clicked += EMS_Clicked;
 
 
             Content = new StackLayout
             {
-                Spacing = 30,
-                VerticalOptions = LayoutOptions.FillAndExpand,
+                Spacing = 35,
+                VerticalOptions = LayoutOptions.CenterAndExpand,
                 Children = { police, fire, ems }
             };
+
+
+            
 
         }
 
@@ -83,11 +89,11 @@ namespace TestApp3
         }
 
 
-        private void CreateCadIncident()
+        private void CreateCadIncident(string city, string callerName, string eventName, string locInfo, string address, string callerNum)
         {
             try
             {
-                NewIncident newIncident = cadHttp.CreateTestIncident();
+                NewIncident newIncident = cadHttp.CreateTestIncident(city, callerName, eventName, locInfo, address, callerNum);
 
                 IncidentResponse response = cadHttp.SendIncident(newIncident);
             } catch (Exception ex)
@@ -101,7 +107,7 @@ namespace TestApp3
         {
             try
             {
-                CreateCadIncident();
+                CreateCadIncident("Denver", "Jenny", CADDispositionTypes.SHOTS_FIRED, locationInfo, "123 Green St", "8675309");
                 ShowDispostion(AlertType.Police);                
                 //Console.WriteLine("Tracking Number Returned: " + response.incident.tracking_number);
             } catch (Exception ex)
@@ -114,7 +120,7 @@ namespace TestApp3
         {
             try
             {
-                CreateCadIncident();
+                CreateCadIncident("Colorado Springs", "Tom", CADDispositionTypes.FIRE, locationInfo, "333 3rd St", "7195659985");
                 ShowDispostion(AlertType.Fire);
             }
             catch (Exception ex)
@@ -127,7 +133,7 @@ namespace TestApp3
         {
             try
             {
-                CreateCadIncident();
+                CreateCadIncident("Boulder", "Nancy", CADDispositionTypes.CHEST_PAIN, locationInfo, "98 Peace Ln", "3036559104");
                 ShowDispostion(AlertType.EMS);
             }
             catch (Exception ex)
@@ -140,9 +146,10 @@ namespace TestApp3
         private void ShowDispostion(AlertType type)
         {
             var master = this.Parent as TabbedPage;
-            var dispositionPage = master.Children[1];
-            dispositionPage.BindingContext = new TypeOfAlert { Type = type };
+            Disposition dispositionPage = (Disposition) master.Children[1];
+            dispositionPage.BindingContext = new DispositionViewModel { TypeOfAlert = type };
             //Navigation.NavigationStack.Append(this);
+            
             master.CurrentPage = dispositionPage;
         }
 
@@ -150,8 +157,5 @@ namespace TestApp3
     }
 
 
-    class TypeOfAlert
-    {
-        public AlertType Type { get; set; }
-    }
+    
 }

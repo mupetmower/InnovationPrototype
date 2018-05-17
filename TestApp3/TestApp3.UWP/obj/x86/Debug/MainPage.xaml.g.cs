@@ -13,7 +13,8 @@
 namespace TestApp3 {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Interact\\Documents\\TestApp3\\TestApp3\\TestApp3\\MainPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\afrye\\Documents\\GitHubRepositories\\InnovationPrototype\\TestApp3\\TestApp3" +
+        "\\MainPage.xaml")]
     public partial class MainPage : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

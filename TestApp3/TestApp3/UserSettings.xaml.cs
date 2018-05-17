@@ -15,6 +15,41 @@ namespace TestApp3
 		public UserSettings ()
         {
             InitializeComponent ();
+
+            BuildContent();
 		}
+
+        private void BuildContent()
+        {
+
+            var first = NewEntry("First Name");
+            var last = NewEntry("Last Name");
+            var roomNum = NewEntry("Room Number");
+            var floor = NewEntry("Floor");
+            var totalChildren = NewEntry("Total Children In Class");
+
+
+
+            Content = new StackLayout
+            {
+                Spacing = 10,
+                Margin = 10,
+                Children = { first, last, roomNum, floor, totalChildren },
+
+            };
+        }
+
+
+        private Entry NewEntry(string placeholder)
+        {
+            return new Entry
+            {
+                Placeholder = placeholder,
+                PlaceholderColor = Color.White,
+                TextColor = Color.White,
+                FontSize = 11,
+
+            };
+        }
 	}
 }

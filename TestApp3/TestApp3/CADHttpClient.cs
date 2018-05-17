@@ -18,7 +18,7 @@ namespace TestApp3
         /// <summary>
         /// Number in string format that is used for every api call to created incident
         /// </summary>
-        private string incidentTrackingNumber;
+        public static string incidentTrackingNumber;
         
         private CADConnection cadConnection;
 
@@ -55,6 +55,7 @@ namespace TestApp3
 
             IncidentResponse incidentResponse = JsonConvert.DeserializeObject<IncidentResponse>(response);
             incidentTrackingNumber = incidentResponse.incident.tracking_number;
+            Console.WriteLine("\n\nINCIDENT CREATED!\nNew Incident Tracking Number ---- " + incidentTrackingNumber + "\n\n\n");
             return incidentResponse;
         }
 
@@ -95,9 +96,17 @@ namespace TestApp3
 
 
 
-        public NewIncident CreateTestIncident()
+        //public NewIncident CreateTestIncident()
+        //{
+        //    NewIncident newIncident = new NewIncident("superuser", "testCity-AF", "testCaller-AF", "RUN");
+
+        //    return newIncident;
+        //}
+
+
+        public NewIncident CreateTestIncident(string city, string callername, string eventCode, string locationInfo, string address, string callerPhone)
         {
-            NewIncident newIncident = new NewIncident("superuser", "testCity-AF", "testCaller-AF", "RUN");
+            NewIncident newIncident = new NewIncident("superuser", city, callername, eventCode, locationInfo, address, callerPhone);
 
             return newIncident;
         }

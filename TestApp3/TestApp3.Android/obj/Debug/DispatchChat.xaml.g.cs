@@ -13,7 +13,8 @@
 namespace TestApp3 {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Interact\\Documents\\TestApp3\\TestApp3\\TestApp3\\DispatchChat.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\afrye\\Documents\\GitHubRepositories\\InnovationPrototype\\TestApp3\\TestApp3" +
+        "\\DispatchChat.xaml")]
     public partial class DispatchChat : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

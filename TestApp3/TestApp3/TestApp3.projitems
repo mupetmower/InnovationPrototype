@@ -17,12 +17,14 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)CADConnection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CADDispositionTypes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CADHttpClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CADRestAPI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CallType.xaml.cs">
       <DependentUpon>CallType.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)CustomEntryRenderer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Details.xaml.cs">
       <DependentUpon>Details.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -35,6 +37,7 @@
       <DependentUpon>Disposition.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)DispositionViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Incident.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IncidentDisposition.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IncidentDispositionRef.cs" />

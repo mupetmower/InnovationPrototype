@@ -13,14 +13,16 @@ namespace TestApp3
 		{
             //NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
-            BackgroundColor = Color.Navy;
-            
+            BackgroundColor = Color.FromHex("171b4a");
+
             //this.HeightRequest = 5;
-            Children.Add(new CallType { Icon = "bellicon.png", Title = "Type" });
-            Children.Add(new Disposition { Icon = "dispositionicon.png", Title = "Disposition" });
-            Children.Add(new Details { Icon = "papericon.png", Title = "Details" });
+            Children.Add(new CallType { Icon = "bellicon.png", Title = "Alrt" });
+            Children.Add(new Disposition { Icon = "alerticon.png", Title = "Type" });
+            Children.Add(new Details { Icon = "papericon.png", Title = "Info" });
             Children.Add(new DispatchChat { Icon = "dispatchchaticon.png", Title = "Chat" });
-            
+
+            //Children.Add(new UserSettings { Icon = "usersettingsicon.png", Title = "User" });
+
 
             //FUTURE - put settings buttton separate, maybe one of those "three-horizontal-lines-buttons"
             //Children.Add(new UserSettings { Icon = "usersettingsicon.png", Title = "Settings" });

@@ -2339,6 +2339,9 @@ namespace TestApp3.Droid
 			// aapt resource value: 2131296339
 			public static int abc_vector_test = 2131296339;
 			
+			// aapt resource value: 0
+			public static int alerticon = 0;
+			
 			// aapt resource value: 2131296340
 			public static int avd_hide_password = 2131296340;
 			
@@ -2368,6 +2371,9 @@ namespace TestApp3.Droid
 			
 			// aapt resource value: 0
 			public static int dispatchchaticon = 0;
+			
+			// aapt resource value: 0
+			public static int dispatchchatimagecrop = 0;
 			
 			// aapt resource value: 0
 			public static int dispositionicon = 0;
