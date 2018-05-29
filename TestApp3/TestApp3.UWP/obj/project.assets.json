@@ -6923,11 +6923,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Interact\\Documents\\TestApp3\\TestApp3\\TestApp3.UWP\\TestApp3.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\Interact\\Documents\\InnovationPrototype\\TestApp3\\TestApp3.UWP\\TestApp3.UWP.csproj",
       "projectName": "TestApp3.UWP",
-      "projectPath": "C:\\Users\\Interact\\Documents\\TestApp3\\TestApp3\\TestApp3.UWP\\TestApp3.UWP.csproj",
+      "projectPath": "C:\\Users\\Interact\\Documents\\InnovationPrototype\\TestApp3\\TestApp3.UWP\\TestApp3.UWP.csproj",
       "packagesPath": "C:\\Users\\Interact\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Interact\\Documents\\TestApp3\\TestApp3\\TestApp3.UWP\\obj\\",
+      "outputPath": "C:\\Users\\Interact\\Documents\\InnovationPrototype\\TestApp3\\TestApp3.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

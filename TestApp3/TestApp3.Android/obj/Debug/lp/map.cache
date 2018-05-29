@@ -1,6 +1,11 @@
 System.Runtime
 FormsViewGroup
 Newtonsoft.Json
+Plugin.CurrentActivity
+Plugin.Geolocator.Abstractions
+Plugin.Geolocator
+Plugin.Permissions.Abstractions
+Plugin.Permissions
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
 Xamarin.Android.Arch.Lifecycle.Runtime
@@ -25,8 +30,3 @@ Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 netstandard
-Plugin.CurrentActivity
-Plugin.Geolocator.Abstractions
-Plugin.Geolocator
-Plugin.Permissions.Abstractions
-Plugin.Permissions

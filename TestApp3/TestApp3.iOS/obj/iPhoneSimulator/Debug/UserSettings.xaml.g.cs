@@ -13,8 +13,8 @@
 namespace TestApp3 {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\afrye\\Documents\\GitHubRepositories\\InnovationPrototype\\TestApp3\\TestApp3" +
-        "\\UserSettings.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Interact\\Documents\\InnovationPrototype\\TestApp3\\TestApp3\\UserSettings.xa" +
+        "ml")]
     public partial class UserSettings : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

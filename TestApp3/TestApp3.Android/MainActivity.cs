@@ -9,6 +9,7 @@ using Android.OS;
 
 using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
+using Plugin.CurrentActivity;
 
 namespace TestApp3.Droid
 {
@@ -22,7 +23,10 @@ namespace TestApp3.Droid
 
             base.OnCreate(bundle);
 
+            CrossCurrentActivity.Current.Activity = this;
+
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            
             LoadApplication(new App());
         }
 
@@ -30,6 +34,7 @@ namespace TestApp3.Droid
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
         {
             PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
 }

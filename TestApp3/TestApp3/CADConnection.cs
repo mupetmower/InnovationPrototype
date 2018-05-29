@@ -67,6 +67,14 @@ namespace TestApp3
             return response;
         }
 
+        /// <summary>
+        /// Serializes given body object to a string, attaches body to the given request, and sends the request as a POST
+        /// Returns the response as a string.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="request"></param>
+        /// <param name="body">Body as an object</param>
+        /// <returns></returns>
         public string SendPostRequest<T>(HttpWebRequest request, T body)
         {
             string bodyString = JsonConvert.SerializeObject(body);
@@ -80,6 +88,13 @@ namespace TestApp3
             return null;
         }
 
+
+        /// <summary>
+        /// Adds the body as a string to the given request.
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="bodyString"></param>
+        /// <returns></returns>
         public HttpWebRequest AddPostBody(HttpWebRequest request, string bodyString)
         {
             var data = Encoding.ASCII.GetBytes(bodyString);

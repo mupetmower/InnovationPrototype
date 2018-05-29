@@ -983,20 +983,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\afrye\\.nuget\\packages\\": {}
+    "C:\\Users\\Interact\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\afrye\\Documents\\GitHubRepositories\\InnovationPrototype\\TestApp3\\TestApp3.Android\\TestApp3.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Interact\\Documents\\InnovationPrototype\\TestApp3\\TestApp3.Android\\TestApp3.Android.csproj",
       "projectName": "TestApp3.Android",
-      "projectPath": "C:\\Users\\afrye\\Documents\\GitHubRepositories\\InnovationPrototype\\TestApp3\\TestApp3.Android\\TestApp3.Android.csproj",
-      "packagesPath": "C:\\Users\\afrye\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\afrye\\Documents\\GitHubRepositories\\InnovationPrototype\\TestApp3\\TestApp3.Android\\obj\\",
+      "projectPath": "C:\\Users\\Interact\\Documents\\InnovationPrototype\\TestApp3\\TestApp3.Android\\TestApp3.Android.csproj",
+      "packagesPath": "C:\\Users\\Interact\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Interact\\Documents\\InnovationPrototype\\TestApp3\\TestApp3.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\afrye\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Interact\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

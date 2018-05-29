@@ -15,6 +15,28 @@ namespace TestApp3
 		public DispatchChat ()
 		{
 			InitializeComponent ();
+
+
+            var btnTest = new Button
+            {
+                Text = "Test"
+            };
+            btnTest.Clicked += BtnTest_Clicked;
+            Content = new StackLayout
+            {
+                Children = { btnTest }
+            };
 		}
-	}
+
+        private void BtnTest_Clicked(object sender, EventArgs e)
+        {
+            Geolocation geo = new Geolocation();
+            if (geo.CanUseGeolocation())
+            {
+                geo.GetPosition();
+                //geo.RequestLocation();
+            }
+            
+        }
+    }
 }

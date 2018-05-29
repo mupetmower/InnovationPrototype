@@ -38,6 +38,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)DispositionViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Geolocation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Incident.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IncidentDisposition.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IncidentDispositionRef.cs" />
